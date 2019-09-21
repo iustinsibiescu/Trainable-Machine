@@ -5,11 +5,16 @@
 		<!-- Load the latest version of Tensorflow.js -->
 		<script src="https://unpkg.com/@tensorflow/tfjs"></script>
 	    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+	    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
 	</head>
 	<body>
 		<div id="console"></div>
     	<!-- Load the webcam that will be used to load images -->
     	<video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    	<!-- Load the buttons for the 3 classes -->
+    	<button id="class-a">Add A</button>
+		<button id="class-b">Add B</button>
+		<button id="class-c">Add C</button>
     	<!-- Load index.js after the content of the page -->
     	<script src="index.js"></script>
 	</body>
